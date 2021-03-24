@@ -1,11 +1,42 @@
 # Page d'acceuil
-     # Lien pour rediriger vers les autres pages
+     ## Lien pour rediriger vers les autres pages
 
-# Page liste episode 
-
+# Page liste episode
+     
+     ## Afficher les episodes
+       ### utiliser la méthode : fetch , pour recuperer les donées de l'API
+     ## Rendre le nom des episodes clickable
+       ### utiliser le : AddEventListener
+     ## Au click, afficher les détails (photos , noms , genres , especes , types)
+       ### utiliser le : AddEventListener
+     ## Mettre en place un selecteur qui permet d'afficher les noms d'une saison précise
+       ### Faire un accordion       
 
 # Page liste personnages 
+     
+     ## Afficher les personnages 
+       ### utiliser la méthode : fetch , pour recuperer les donées de l'API
+     ## Rendre le nom des personnages clickable
+       ### utiliser le : AddEventListener
+     ## Au click, afficher les détails: 
+          ( noms , statues , especes , types , planetes, genres , planete d'origine , dernier lieu de positionnement connu
+           les episodes dans lesquels le personnages apparait )
+       ### utiliser le : AddEventListener
+     ## Mettre en place un selecteur qui permet d'afficher les noms des personnages d'une espece bien precise      
+       ###  Faire un accordion    
+   
+     ## BONUS : selecteur de status, selecteur de genre, selecteur de planete d'origine  
+     ## BONUS : mettre en place une pagination 
 
+# Page liste lieux
 
+    ##  Afficher les lieux 
+      ### utiliser la méthode : fetch , pour recuperer les donées de l'API
+    ## Rendre le nom des lieux clickable 
+      ### utiliser le : AddEventListener
+    ## Au click , afficher les details ( noms , types , dimensions , habitans )
+      ### utiliser le : AddEventListener
+    ## Mettre un selecteur qui permet d'afficher que le nom des lieux d'un type précis  
+      ### Faire un accordion
 
-# Page liste lieux 
+    ## Bonus : mettre en place une pagination 
