@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------------------------------------------------------- */
+.popup {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  background-color: #040714;
+  position: fixed;
+  color: aliceblue;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  filter: drop-shadow(15px 15px 120px #040714);
+}
+
+.ul_popup {
+  list-style: none;
+  padding: 20px;
+}
+
+.li_popup {
+  padding: 9px;
+}
+
+/* ------------------------------------------------------------------ */
+/* .img{
+    opacity: .4;
+    filter: drop-shadow(15px 4px 6px black); 
+} */
+/* ---------------------------------------------------------------------------------------------------------- */
+#list-episodes {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 10px 30px; */
+  padding: 10px 0px 10px 30px;
+}
+
+/* .container,  */
+.personnage-name {
+  height: 150px;
+  width: 22%;
+  background-color: cadetblue;
+  margin: 0 30px 10px 0;
+  display: block;
+  margin-top: 80px;
+}
+
+.image {
+  height: 80px;
+  width: 80px;
+  position: relative;
+  margin-top: -5%;
+  margin-left: 35%;
+}
+
+.img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+.img:hover {
+  width: 100px;
+  height: 100px;
+  transform: 0.2s ease-in-out;
+  filter: grayscale(100%);
+  transform: scale(1, 1);
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+  }
+
+  /* .container{
+      height: auto;
+      width: 40%;
+      background-color: cadetblue;
+      margin: 0 10px 10px 0;
+      display: block;
+      margin-top: 80px;
+
+  } */
+  .image {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin-top: -20%;
+    margin-left: 20%;
+  }
+
+  .img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+  }
+
+  /*     
+      .img:hover{
+          width: 100px;
+          height: 100px;
+          transform: .2s ease-in-out;
+          filter: grayscale(100%);
+          transform : scale(1, 1);
+      } */
+  /* h4{
+      padding: 10px;
+  } */
+  .popup {
+    height: 600px;
+    width: 85%;
+    margin: auto;
+    background-color: #040714;
+    position: fixed;
+    color: aliceblue;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    filter: drop-shadow(15px 15px 120px #040714);
+    overflow: scroll;
+  }
+
+  .ul_popup {
+    list-style: none;
+    padding: 20px;
+    /* display: none; */
+  }
+
+  .li_popup {
+    padding: 9px;
+  }
+
+  #list-episodes {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* padding: 10px 30px; */
+    padding: 10px 0px 10px 30px;
+  }
+
+  .personnage-name {
+    height: 150px;
+    width: 40%;
+    background-color: cadetblue;
+    margin: 0 30px 10px 0;
+    display: block;
+    margin-top: 80px;
+  }
+
+  .popup_img {
+    height: 300px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  /* .img{
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin: auto;
+  } */
+  /*     
+      .img:hover{
+          width: 100px;
+          height: 100px;
+          transform: .2s ease-in-out;
+          filter: grayscale(100%);
+          transform : scale(1, 1);
+      } */
+}
+/* .section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+}
+.container{ */
+/* height: auto; */
+/* height: 115px; */
+/* width: 25%;
+    background-color: cadetblue;
+    margin: 0 30px 10px 0;
+    display: block;
+    margin-top: 80px;
+}
+
+.buttonFollow{
+    height: 60px;
+    width: 60px;
+    background-color: darkorange;
+    border-radius: 50%;
+    border: 1px solid;
+    position: relative;
+}
+.spanFollow{
+    opacity: 1;
+}
+.spanUnfollow{
+opacity: 0;
+}
+.disable{
+   opacity: 0;
+}
+.active{
+    opacity: 1;
+}
+
+.red{
+    background-color: red;
+}
+
+.image{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    margin-top: -5%;
+    margin-left: 35%;
+}
+
+.img{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+
+}
+
+.img:hover{
+    width: 100px;
+    height: 100px;
+    transform: .2s ease-in-out;
+    filter: grayscale(100%);
+    transform : scale(1, 1);
+}
+
+h4{
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 480px){
+    .section{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 30px;
+    }
+
+    .container{
+        height: auto;
+        width: 40%;
+        background-color: cadetblue;
+        margin: 0 10px 10px 0;
+        display: block;
+        margin-top: 80px;
+
+    }
+
+    .image{
+        height: 100px;
+        width: 100px;
+        position: relative;
+        margin-top: -15%;
+        margin-left: 10px;
+    }
+
+    .img{
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        margin: auto;
+
+    }
+
+    .img:hover{
+        width: 100px;
+        height: 100px;
+        transform: .2s ease-in-out;
+        filter: grayscale(100%);
+        transform : scale(1, 1);
+    }
+
+    h4{
+        padding: 10px;
+    }
+} */
+@font-face {
+  font-family: "my_font5";
+  src: url("https://raw.githubusercontent.com/MANOJ-M-01/Assets/main/fonts/FIGHTER%20BRUSH.ttf%22");
+}
+@font-face {
+  font-family: "my_font6";
+  src: url("https://raw.githubusercontent.com/MANOJ-M-01/Assets/main/fonts/Fusterd%20Brush.otf%22");
+}
+body {
+  background-color: #0e0c0c;
+  height: 100vh;
+}
+
+fieldset {
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  transition: all 0.35s ease-in-out;
+}
+
+fieldset:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+
+.text_head {
+  background: linear-gradient(to right, #5E2A73 0%, #bd0835 40%, #bd4a08 60%, #f0a608 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: my_font6;
+  font-weight: 100;
+  margin: 0;
+  line-height: 50px;
+  transform: rotateZ(-15deg);
+  margin-bottom: 30px;
+}
+
+.text {
+  background: linear-gradient(to right, #bd4a08 0%, #bd0835 40%, #f0a608 60%, #5E2A73 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: my_font5;
+  font-size: 2em;
+  font-weight: 100;
+  margin: 0;
+}
+
+.app_lists ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+.app_lists ul li .card {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 30px;
+  border: 1px solid #07e607;
+}
+
+body {
+  background-color: linear-gradient(to right, #000000, #0f9b0f);
+}
+
+/*# sourceMappingURL=/styles.c71d5250.css.map */

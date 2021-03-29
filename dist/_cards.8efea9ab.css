@@ -1,0 +1,15 @@
+.app_lists ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+.app_lists ul li .card {
+  width: 300px;
+  height: 400px;
+  margin-bottom: 30px;
+  border: 1px solid #07e607;
+}
+
+/*# sourceMappingURL=/_cards.8efea9ab.css.map */
