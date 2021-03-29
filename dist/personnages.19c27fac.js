@@ -213,7 +213,8 @@ var buttons = document.querySelectorAll(".species");
 buttons.forEach(function (button) {
   // j'ai utilisé un change au lieu du click car les radio change ce sont les boutons qui sont clické
   button.addEventListener("change", function (event) {
-    // avec le event.target je recupère ma balise cliqué
+    console.log(event); // avec le event.target je recupère ma balise cliqué
+
     var specie = event.target.value; //je lui ai mis "species=${specie}" à la fin pour qu'il aille recuperer mes datas en fonction des espèces
     // mon specie fait reference à ma variable en haut qui contien l'element radio selectionné.
 
@@ -235,6 +236,8 @@ function createSpecie(specie) {
 function createSpecies(species) {
   var species_container = document.querySelector(".species_container");
   console.log(species_container);
+  species_container.innerHTML = ""; //je vide ma div 
+
   species.forEach(function (specie) {
     // je concataine species_container avec la fonction createspecie 
     species_container.innerHTML += createSpecie(specie);
@@ -268,7 +271,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50605" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51573" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

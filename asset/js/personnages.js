@@ -99,6 +99,7 @@ let buttons = document.querySelectorAll(".species");
 buttons.forEach(button => {
   // j'ai utilisé un change au lieu du click car les radio change ce sont les boutons qui sont clické
   button.addEventListener("change", function (event) {
+    console.log(event);
     // avec le event.target je recupère ma balise cliqué
     let specie = event.target.value;
     //je lui ai mis "species=${specie}" à la fin pour qu'il aille recuperer mes datas en fonction des espèces
@@ -131,6 +132,7 @@ function createSpecie (specie) {
 function createSpecies (species) {
   let species_container = document.querySelector(".species_container");
   console.log(species_container);
+  species_container.innerHTML = "";//je vide ma div 
   species.forEach(specie => {
     // je concataine species_container avec la fonction createspecie 
     species_container.innerHTML += createSpecie(specie);
