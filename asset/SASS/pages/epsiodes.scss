@@ -1,0 +1,65 @@
+@import '../settings.scss';
+@font-face {
+    font-family: 'get_schwifty';
+    src: url('../../../get_schwifty.ttf') format('truetype');
+}
+
+html {
+    background: $couleur_page;
+    body {
+        height: 100%;
+        margin: 0;
+        font-family: sans-serif;
+    }
+}
+
+
+#selecteurSaison {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    label {
+        color: white;
+    }
+    input{
+        margin-left: 60px;
+    }
+}
+
+#list-episodes {
+    color: rgba(255, 255, 255, 0.822);
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // padding: 25%;
+    // padding-top: 40px;
+    // justify-content: space-around;
+    // flex-wrap: wrap;
+    text-align: center;
+  }
+
+.episodeName {
+    padding: 20px;
+    .rm {
+        font-family: 'get_schwifty',sans-serif;
+        font-size: 30px;
+        padding-left: 30px;
+        color: $couleur_primaire;
+        text-shadow: 2px 1px 0px #8fdd52;
+    }
+}
+
+.EpisodeDetails {
+    display: flex;
+    padding: 20px;
+    width: 400px;
+    margin-left: 668px;
+    img {
+        width: 170px;
+        border-radius: 25%;
+    }
+}
+
+
+  
