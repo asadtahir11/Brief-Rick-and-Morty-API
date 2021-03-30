@@ -1,0 +1,14 @@
+@import './settings.scss'; // fichier settings toujours en premier
+@import './pages/epsiodes.scss'; 
+@import './pages/lieux.scss';
+@import './pages/personnages.scss';
+@import './pages/versionClass.scss';
+@import './pages/cards.scss';
+@import './pages/navbarFullScreen.scss';
+
+
+
+body {
+    background: $couleur_page;
+}
+
